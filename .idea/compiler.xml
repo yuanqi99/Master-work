@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+      <profile name="Annotation profile for java-frame" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../../Path/Maven/repository/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+          <entry name="$PROJECT_DIR$/../../../../Path/Maven/repository/org/springframework/boot/spring-boot-configuration-processor/3.2.4/spring-boot-configuration-processor-3.2.4.jar" />
+        </processorPath>
+        <module name="frame-cloud" />
+        <module name="frame-orm" />
+        <module name="frame-sa-token" />
+        <module name="frame-common" />
+        <module name="frame-spring" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="frame-cloud" options="-parameters" />
+      <module name="frame-common" options="-parameters" />
+      <module name="frame-orm" options="-parameters" />
+      <module name="frame-sa-token" options="-parameters" />
+      <module name="frame-spring" options="-parameters" />
+      <module name="java-frame" options="-parameters" />
+    </option>
+  </component>
+</project>
